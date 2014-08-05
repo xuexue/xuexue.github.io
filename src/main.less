@@ -1,5 +1,15 @@
 body {
-  color: blue;
+  font-family: 'Droid Sans', sans-serif;
+}
+p {
+  line-height: 1.3em;
+}
+a {
+  color: steelblue;
+  text-decoration: none;
+}
+a:hover {
+  color: steelblue;
 }
 
 .container {
@@ -9,22 +19,73 @@ body {
   margin: 0px;
   margin: auto;
 
-  .left-menu {
+  .left-menu-container {
     width: 250px;
     min-height: 1000px;
-    background: blue;
     float: left;
 
   }
   .content {
     width: 650px;
     min-height: 1000px;
-    background: red;
     float: left;
   }
   .footer {
     clear: both;
     width: 100%;
-    background: green;
   }
+}
+
+.left-menu {
+  margin-top: 150px;
+  margin-right: 50px;
+  float: right;
+  text-align: right;
+  line-height: 1.5em;
+  h3 {
+    font-size: 1em;
+    line-height: 2em;
+    color: #666;
+    margin: 0px;
+    padding: 0px;
+  }
+  .subsection {
+    margin-bottom: 15px;
+  }
+
+}
+
+.section {
+  margin-bottom: 5px;
+  h1 {
+    font-size: 1.6em;
+  }
+  h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 1.0em;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+  }
+  .subsection {
+    margin-bottom: 30px;
+  }
+}
+
+@logosize: 16px;
+.twitter-logo {
+  width: @logosize - 3;
+  height: @logosize - 3;
+  margin-left: 2px;
+  margin-right: 5px;
+}
+.github-logo {
+  width: @logosize;
+  height: @logosize;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
 }
