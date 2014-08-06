@@ -1,5 +1,6 @@
 body {
   font-family: 'Droid Sans', sans-serif;
+  font-size: 0.9em;
 }
 p {
   line-height: 1.3em;
@@ -10,6 +11,7 @@ a {
 }
 a:hover {
   color: steelblue;
+  text-decoration: underline;
 }
 
 .container {
@@ -23,7 +25,6 @@ a:hover {
     width: 250px;
     min-height: 1000px;
     float: left;
-
   }
   .content {
     width: 650px;
@@ -31,14 +32,17 @@ a:hover {
     float: left;
   }
   .footer {
+    display: block;
     clear: both;
     width: 100%;
+    padding: 30px 0px 50px 0px;
+    text-align: center;
   }
 }
 
 .left-menu {
   margin-top: 150px;
-  margin-right: 50px;
+  margin-right: 70px;
   float: right;
   text-align: right;
   line-height: 1.5em;
@@ -48,11 +52,15 @@ a:hover {
     color: #666;
     margin: 0px;
     padding: 0px;
+    margin-bottom: 0.5em;
   }
   .subsection {
     margin-bottom: 15px;
   }
-
+  .link {
+    line-height: 1em;
+    padding-bottom: 0.5em;
+  }
 }
 
 .section {
@@ -61,7 +69,7 @@ a:hover {
     font-size: 1.6em;
   }
   h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
   }
   h3 {
@@ -72,7 +80,18 @@ a:hover {
   }
   .subsection {
     margin-bottom: 30px;
+    .work-info {
+      color: #666;
+    }
+    .work-desc {
+      margin-top: 0.5em;
+    }
   }
+}
+
+.highlight {
+  background: #eee;
+  padding: 5px 15px;
 }
 
 @logosize: 16px;
@@ -82,10 +101,18 @@ a:hover {
   margin-left: 2px;
   margin-right: 5px;
 }
-.github-logo {
+.github-logo{
   width: @logosize;
   height: @logosize;
   margin-right: 5px;
   position: relative;
   top: 2px;
+}
+.linkedin-logo{
+  width: @logosize - 2;
+  height: @logosize - 2;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+  margin-left: 1px;
 }
