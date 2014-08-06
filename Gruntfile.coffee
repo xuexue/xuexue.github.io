@@ -22,10 +22,19 @@ module.exports = (grunt) ->
           , dest: "target/index.html" }
         ]
 
+    copy:
+      main:
+        files: [
+          { expand: true
+          , cwd: "src/imgs"
+          , src: ["**"]
+          , dest: "target/imgs" }
+        ]
+
     #### Task to watch files
     watch:
       files: ["src/*"]
-      tasks: ["less", "jade"]
+      tasks: ["less", "jade", "copy"]
 
     #### Task to clean destination dir
     clean: [
@@ -37,6 +46,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-less'
   grunt.loadNpmTasks 'grunt-contrib-watch'
+  grunt.loadNpmTasks 'grunt-contrib-copy'
 
   grunt.registerTask 'server', "Run server", () ->
     done = @async()
@@ -55,6 +65,7 @@ module.exports = (grunt) ->
     'clean'
     'less'
     'jade'
+    'copy'
     'server'
     'watch'
   ]
