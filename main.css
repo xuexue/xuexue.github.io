@@ -1,7 +1,6 @@
 body {
   font-family: 'Open Sans', serif;
   font-size: 0.8em;
-  overflow-x: hidden;
 }
 p {
   line-height: 1.3em;
@@ -15,23 +14,22 @@ a:hover {
   text-decoration: underline;
 }
 .container {
-  max-width: 900px;
-  min-height: 1000px;
   padding: 0px;
   margin: 0px;
   margin: auto;
+}
+@media (min-width: 910px) {
+  .container {
+    max-width: 900px;
+    min-height: 1000px;
+  }
 }
 @media (max-width: 910px) {
   .container {
     max-width: 700px;
   }
 }
-@media (max-width: 710px) {
-  .container {
-    max-width: 500px;
-  }
-}
-@media (max-width: 520px) {
+@media (max-width: 768px) {
   .container {
     width: 100%;
     max-width: 100%;
@@ -39,21 +37,20 @@ a:hover {
   }
 }
 .container .left-menu-container {
-  max-width: 250px;
-  min-height: 1000px;
   float: right;
+}
+@media (min-width: 910px) {
+  .container .left-menu-container {
+    max-width: 250px;
+    min-height: 1000px;
+  }
 }
 @media (max-width: 910px) {
   .container .left-menu-container {
     max-width: 200px;
   }
 }
-@media (max-width: 710px) {
-  .container .left-menu-container {
-    max-width: 150px;
-  }
-}
-@media (max-width: 520px) {
+@media (max-width: 768px) {
   .container .left-menu-container {
     max-width: 100%;
     width: 100%;
@@ -62,21 +59,20 @@ a:hover {
   }
 }
 .container .content {
-  max-width: 650px;
-  min-height: 1000px;
   float: right;
+}
+@media (min-width: 910px) {
+  .container .content {
+    max-width: 650px;
+    min-height: 1000px;
+  }
 }
 @media (max-width: 910px) {
   .container .content {
     max-width: 500px;
   }
 }
-@media (max-width: 710px) {
-  .container .content {
-    max-width: 350px;
-  }
-}
-@media (max-width: 520px) {
+@media (max-width: 768px) {
   .container .content {
     max-width: 100%;
     width: 100%;
@@ -92,22 +88,21 @@ a:hover {
 }
 .left-menu {
   margin-top: 150px;
-  margin-right: 60px;
   float: right;
   text-align: right;
   line-height: 1.5em;
+}
+@media (min-width: 910px) {
+  .left-menu {
+    margin-right: 60px;
+  }
 }
 @media (max-width: 910px) {
   .left-menu {
     margin-right: 45px;
   }
 }
-@media (max-width: 710px) {
-  .left-menu {
-    margin-right: 30px;
-  }
-}
-@media (max-width: 520px) {
+@media (max-width: 768px) {
   .left-menu {
     max-width: auto;
     width: 100%;
